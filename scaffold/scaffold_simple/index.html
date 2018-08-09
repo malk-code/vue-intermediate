@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>scaffold simple</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+    
+  <!--
+  		4. 内联模板 2：使用 x-tempate 特性
+			1. 在一个 script 元素中，并为其带上 text/x-template 的类型，然后通过一个 id 将模板引用过去，可以用于模板特别大的 demo 或极小型的应用。但是其它情况下请避免使用：
+			2. 因为这会将模板和该组件的其它定义分离开（ inline-template 也是），但它允许使用适当的 HTML 标记编写需要的 HTML。因为 Vue 是 SPA，因此 script 添加在 index.html
+	-->
+	  <script type="text/x-template" id="hello-world-template">
+	  		<p>inex.html x-temolate: Hello hello hello</p>
+	  </script>
+  </body>
+</html>
