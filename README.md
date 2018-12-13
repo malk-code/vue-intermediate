@@ -14,13 +14,10 @@ intact 和 simple 两种方式新建项目
 - vue进阶，为当前项目下的`simple`项目，服务器 [页面地址](http://47.100.123.138:99/#/index)
 
 ## 备注
-> 学习路线基本都是vue官网的资料
+> 学习路线基本都是vue官网的资料  
 > **级别路线**：beginner level（初学者级别）, elementary level（基础级别）；中级可以说：intermediate level；高级则是：advanced level
   
 ## todo
-- 自定义指令
-
-  
-  
+- 自定义指令      
 简书地址：https://www.jianshu.com/u/191a2446ab19)
 
