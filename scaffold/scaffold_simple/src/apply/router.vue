@@ -1,14 +1,14 @@
-<template> 
-	<div class="main" id="app1">
+<template>
+	<div class="main">
 		<h2>router</h2>
 		<router-link class="router" to="temp1">left</router-link>
 		<router-link class="router" to="temp2">right</router-link>
 
-		  <router-view></router-view>
+		<router-view></router-view>
 	</div>
-</template> 
+</template>
 
-<script> 
+<script>
 	import Vue from 'vue';
 	import Router from 'vue-router';
 
@@ -21,35 +21,35 @@
 	  { path: '/login', component: temp1 },
 	  { path: '/intro', component: temp2 }
 	]
-	
+
 //	const router = new VueRouter({
 //	  routes // （缩写）相当于 routes: routes
 //	})
 
-	export default { 
+	export default {
 //		router: router,
-		data() { 
-			return { 
-				
-			} 
-		} 
+		data() {
+			return {
+
+			}
+		}
 	}
-</script> 
+</script>
 
 <style>
 	h2 {
 		text-align: center;
 		margin: .2rem;
 	}
-	
+
 	.main {
 		height: 6.48rem;
 		background: #FFFFFF;
 	}
-	
+
 	.router {
 		width: 50%;
 		text-align: center;
 	}
-	
+
 </style>
