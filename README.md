@@ -13,12 +13,14 @@ intact 和 simple 两种方式新建项目
 - vue基础，vuejs项目挂在服务器，入口为当前项目的`入门教程`分栏
 - vue进阶，为当前项目下的`simple`项目，服务器 [页面地址](http://47.100.123.138:99/#/index)
 
-> 学习路线基本都是vue官网的资料
-
 ## todo
 
 - 自定义指令
 
+> 学习路线基本都是vue官网的资料
+
+<br/>
+**级别路线**：beginner level（初学者级别）, elementary level（基础级别）；中级可以说：intermediate level；高级则是：advanced level
 
 <br/>
 [简书地址](https://www.jianshu.com/u/191a2446ab19)
