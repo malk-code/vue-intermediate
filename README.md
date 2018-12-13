@@ -19,8 +19,7 @@ intact 和 simple 两种方式新建项目
 
 > 学习路线基本都是vue官网的资料
 
-<br/>
+
 **级别路线**：beginner level（初学者级别）, elementary level（基础级别）；中级可以说：intermediate level；高级则是：advanced level
 
-<br/>
-[简书地址](https://www.jianshu.com/u/191a2446ab19)
+简书地址：https://www.jianshu.com/u/191a2446ab19)
