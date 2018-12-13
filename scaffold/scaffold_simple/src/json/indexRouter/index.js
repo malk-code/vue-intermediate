@@ -1,5 +1,5 @@
 function getIntroRoot(intro) {
-	return "http://192.168.2.101:8020/WEB/Vue/vuejs/sample/learn-basics/" + intro + ".html";
+	return "http://47.100.123.138:91/learn-basics/" + intro + ".html";
 }
 
 module.exports = {
@@ -66,6 +66,12 @@ module.exports = {
 			path: "/vux-plugin",
 			name: "vux plugin",
 			title: "vux 库"
+    },
+    {
+			id: 11,
+			path: "/nested-router",
+			name: "/nested-router",
+			title: "嵌套路由"
 		}
 	],
 	introduction: [{
