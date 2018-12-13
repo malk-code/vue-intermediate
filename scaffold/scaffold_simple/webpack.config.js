@@ -70,8 +70,8 @@ const webpackConfig = {
 
 		// 启用本地服务器配置2-2
 		inline: true, //实时刷新
-		host: "192.168.2.101", //本机的局域网ip
-		//  host: "192.168.1.104", // 家
+		// host: "192.168.2.101", //本机的局域网ip
+		 host: "localhost",
 		//  "server": "webpack-dev-server --open", 指令优先级更高
 		open: false //是否运行成功后直接打开页面
 	},
