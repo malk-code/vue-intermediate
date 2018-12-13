@@ -15,11 +15,11 @@ intact 和 simple 两种方式新建项目
 
 ## 备注
 > 学习路线基本都是vue官网的资料  
-
 > **级别路线**：beginner level（初学者级别）, elementary level（基础级别）；中级可以说：intermediate level；高级则是：advanced level
-
+  
 ## todo
 - 自定义指令
-
+  
+  
 简书地址：https://www.jianshu.com/u/191a2446ab19)
 
