@@ -41,7 +41,7 @@ export default new Router({
         title: '登录-注册'
       },
       // 动态组件/按需加载，完整版本带有 babel-plugin-transform-runtime： 如 let login = component: () => import('../apply/login.vue').then(m => m.default)
-      component: () => import('../apply/login.vue')
+      component: () => import('../apps/login.vue')
     },
     {
       path: '/intro',
@@ -171,6 +171,14 @@ export default new Router({
     },
 
     // 可复用性和组合
+    {
+      path: '/mixins',
+      name: 'mixins',
+      meta: {
+        title: '混入'
+      },
+      component: () => import('../apply/mixins.vue').then(m => m.default)
+    },
     {
       path: '/filter',
       name: 'filter',

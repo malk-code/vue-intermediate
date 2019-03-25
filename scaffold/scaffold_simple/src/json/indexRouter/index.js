@@ -133,6 +133,11 @@ module.exports = {
   ],
   reusability_composition: [
     {
+      path: '/mixins',
+      name: 'imxins',
+      title: '混入'
+    },
+    {
       path: '/filter',
       name: 'filter',
       title: '过滤器'
