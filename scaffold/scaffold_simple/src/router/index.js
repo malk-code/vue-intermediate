@@ -180,6 +180,14 @@ export default new Router({
       component: () => import('../apply/mixins.vue').then(m => m.default)
     },
     {
+      path: '/directive',
+      name: 'directive',
+      meta: {
+        title: '自定义指令'
+      },
+      component: () => import('../apply/directive.vue').then(m => m.default)
+    },
+    {
       path: '/filter',
       name: 'filter',
       meta: {
@@ -201,6 +209,22 @@ export default new Router({
     },
 
     // 内在
+    {
+      path: '/inherent',
+      name: 'inherent',
+      meta: {
+        title: 'inherent'
+      },
+      component: () => import('../apply/inherent.vue') // 深入响应式原理
+    },
+    {
+      path: '/inherent-vue',
+      name: 'inherent-vue',
+      meta: {
+        title: 'inherent-vue'
+      },
+      component: () => import('../apply/inherent-vue.vue') // 深入响应式原理
+    },
 
     // 孵化页面
     {

@@ -10,7 +10,15 @@
     <button @click="object.prop = '组件内'">混入为对象</button>
     <hr style="margin: 10px 0">
     <h4>全局混入</h4>
-    <p>疑问：会调用两次</p>
+    <p>疑问：会调用两次 - 解决方案见注释</p>
+    <hr style="margin: 10px 0">
+    <h4>自定义选项（$options）合并策略</h4>
+    <!--
+      5. 自定义选项（$options）合并策略
+        1. 自定义选项将使用默认策略，即简单地覆盖已有值。通过其钩子Vue.config.optionMergeStrategies，可实现自定义逻辑合并：function (toVal, fromVal) {  // return mergedVal  }
+        2. 对于大多数对象选项，可以使用 methods 的合并策略：var strategies = Vue.config.optionMergeStrategies;    strategies.myOption = strategies.methods
+    -->
+    <p>自定义选项将使用默认策略，即简单地覆盖已有值。通过其钩子Vue.config.optionMergeStrategies，可实现自定义逻辑合并</p>
   </div>
 </template>
 
@@ -18,14 +26,18 @@
 import mixins from '../utils/mixins/mixins'
 // 为自定义的选项 'myOption' 注入一个处理器。
 import Vue from 'vue'
+// 5. 全局混入备注
+//     1. 若是在组件内进行注册会调用两次，且组件内注册的全局混入只会影响到它出现的其它页面，即需要该页面触发注册，后续页面才能访问到。若是在main.js内注册则无这些问题。
+//     2. 钩子优先级会高于局部混入，局部混入的优先级又高于组件内的钩子：钩子函数优先级：main.js的全局混入 > 组件内的全局混入 > 局部混入 > 组件内的钩子函数
 Vue.mixin({
-  mounted: function () {
+  created: function () {
     var myOption = this.$options.myOption
     if (myOption) {
       console.log(myOption, this)
     }
   }
 })
+
 export default {
   mixins: [mixins],
   myOption: 'hello global mixin!',

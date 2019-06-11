@@ -138,6 +138,11 @@ module.exports = {
       title: '混入'
     },
     {
+      path: '/directive',
+      name: 'directive',
+      title: '自定义指令'
+    },
+    {
       path: '/filter',
       name: 'filter',
       title: '过滤器'
